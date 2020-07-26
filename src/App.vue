@@ -92,12 +92,48 @@ export default {
     freeBoard(ind) {
       let audio = new Audio();
       if (ind == 1) {
+        this.$refs.block.getElementsByClassName("block")[
+          ind - 1
+        ].style.background = "red";
+        let step = ind - 1;
+        setTimeout(() => {
+          this.$refs.block.getElementsByClassName("block")[
+            step
+          ].style.background = "#f85656";
+        }, 250);
         audio.src = audio1;
       } else if (ind == 2) {
+        this.$refs.block.getElementsByClassName("block")[
+          ind - 1
+        ].style.background = "green";
+        let step = ind - 1;
+        setTimeout(() => {
+          this.$refs.block.getElementsByClassName("block")[
+            step
+          ].style.background = "#4da14d";
+        }, 250);
         audio.src = audio2;
       } else if (ind == 3) {
+        this.$refs.block.getElementsByClassName("block")[
+          ind - 1
+        ].style.background = "blue";
+        let step = ind - 1;
+        setTimeout(() => {
+          this.$refs.block.getElementsByClassName("block")[
+            step
+          ].style.background = "#6161ff";
+        }, 250);
         audio.src = audio3;
       } else if (ind == 4) {
+        this.$refs.block.getElementsByClassName("block")[
+          ind - 1
+        ].style.background = "yellow";
+        let step = ind - 1;
+        setTimeout(() => {
+          this.$refs.block.getElementsByClassName("block")[
+            step
+          ].style.background = "#f5f578";
+        }, 250);
         audio.src = audio4;
       }
       audio.play();
