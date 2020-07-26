@@ -1,3 +1,6 @@
+# ЗАПУСТИТЬ СЕЙЧАС
+ https://airkross.github.io/simon_game_src/
+
 # Игра Simon Says
 Используемые технологии: Vue.js
 
